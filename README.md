@@ -1,0 +1,1 @@
+事先备好ffmpeg、Mediainfo 并配置好环境变量.
