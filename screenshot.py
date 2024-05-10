@@ -1,12 +1,13 @@
 import os
+import json
 # ffmpeg -i 视频文件名.mp4 -vf "thumbnail" -frames:v 1 输出文件名.png
-
 # 需要分析视频时长
 # 时长设置为video_duration
 
-
-
-def shot(video_name, video_duration, video_n):
+def shot(video_name, video_n):
+    with open(f'{video_name}_mediainfo_json.txt', 'r') as f:
+        # 读取json文件
+        data = json.load(f)
     
     
     name = 'video.mp4'
